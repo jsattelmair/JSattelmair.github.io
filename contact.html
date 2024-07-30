@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Delicious Cookies</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="cookies.css">
+    </head>
+<body>
+<div id="wrapper">
+    <header>
+        <h1>Delicious Cookies - Contact</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <div id="banner"></div>
+    <main class="fit">
+        <h2>Place Your Order!</h2>
+        <p style="font-weight: bold;">
+            Required fields are marked with an asterisk *
+        </p>
+        <form method="post" action="https://webdevbasics.net/scripts/pacific.php">
+            <label for="myFName">*First Name:</label>
+            <input type="text" name="myFName" id="myFName" required="required">
+
+            <label for="myLName">*Last Name:</label>
+            <input type="text" name="myLName" id="myLName" required="required">
+
+            <label for="myEmail">*E-Mail Address:</label>
+            <input type="email" name="myEmail" id="myEmail" required="required">
+
+            <label for="myPhone">Phone Number:</label>
+            <input type="tel" name="myPhone" id="myPhone" maxlength="12">
+            
+            <label>Cookie Choice</label>
+            <div class="num">
+                <label for="ChocolateChip">Chocolate Chip</label>
+                <input type="number" name="ChocolateChip" id="ChocolateChip" min="0" max="12" required="required"><br>
+
+                <label for="FrostedSugar">Frosted Sugar</label>
+                <input type="number" name="FrostedSugar" id="FrostedSugar" min="0" max="12" required="required"><br>
+
+                <label for="PeanutButter">Peanut Butter</label>
+                <input type="number" name="PeanutButter" id="PeanutButter" min="0" max="12" required="required"><br>
+            </div>
+
+            <label>Allergens</label>
+            <div class="cb">
+        
+            <label>Wheat
+                <input type="checkbox" name="Wheat" id="Wheat"
+                value="Allergen">
+              </label>
+              
+              <label>Milk
+                <input type="checkbox" name="Milk" id="Milk"
+                value="Allergen">
+              </label>
+              
+              <label>Eggs
+                <input type="checkbox" name="Eggs" id="Eggs"
+                value="Allergen">
+              </label>
+
+              <label>Peanuts
+                <input type="checkbox" name="Peanuts" id="Peanuts"
+                value="Allergen">
+              </label>
+              
+              <label>Soy
+                <input type="checkbox" name="Soy" id="Soy"
+                value="Allergen">
+              </label>
+            </div>
+
+            <label>*Delivery:</label>
+            <div class="cb">
+                <label>Deliver to Me<input type="radio" name="Delivery" id="HomeDelivery" value="HomeDelivery"></label>
+                <label>Pickup from Store<input type="radio" name="Delivery" id="Pickup" value="Pickup"></label>
+            </div>
+
+            <label for="myComments">*Comments:</label>
+            <textarea name="myComments" id="myComments" required="required" rows="2" cols="30"></textarea>
+
+            <input type="submit">
+        </form>
+        <div id="contact">
+    </main>
+    <div id="between"><img src="4.png" style="width:20%;height:20%;" alt="cookies"></div>
+    <footer>
+        <small><i>
+            Copyright &copy; 2024 Delicous Cookies<br>
+            <a href="mailto:margaret.sattelmair3920@mail.davistech.edu">margaret.sattelmair3920@mail.davistech.edu</a>
+        </i></small>
+    </footer>
+</div>
+</body>
+</html>
+
